@@ -1,0 +1,73 @@
+---
+layout: layouts/base.njk
+title: Gratis befaring
+description: "Book gratis og uforpliktende befaring med AJ Blikk AS."
+---
+<section class="bg-brand text-white">
+  <div class="section section-py">
+    <h1 class="text-3xl font-bold md:text-4xl">Gratis befaring</h1>
+    <p class="mt-3 max-w-2xl text-white/80">Fyll ut skjemaet under, så tar vi kontakt for å avtale en gratis og uforpliktende befaring. Du får svar fra oss innen 24 timer.</p>
+  </div>
+</section>
+
+<section class="section section-py max-w-2xl">
+  <!--
+    TODO (Netlify): Skjemaet sender inn via Netlify Forms. Gå til
+    Site settings > Forms > Form notifications i Netlify-dashbordet
+    og legg til en e-postvarsling til {{ company.email }} slik at
+    henvendelser faktisk blir varslet dit.
+  -->
+  <form
+    name="gratis-befaring"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    enctype="multipart/form-data"
+    action="/gratis-befaring/takk/"
+    class="space-y-6"
+  >
+    <input type="hidden" name="form-name" value="gratis-befaring">
+    <p class="hidden">
+      <label>Ikke fyll ut dette feltet: <input name="bot-field"></label>
+    </p>
+
+    <div>
+      <label for="navn" class="mb-1 block font-medium text-gray-700">Navn *</label>
+      <input type="text" id="navn" name="navn" required class="form-input">
+    </div>
+
+    <div>
+      <label for="epost" class="mb-1 block font-medium text-gray-700">E-post *</label>
+      <input type="email" id="epost" name="epost" required class="form-input">
+    </div>
+
+    <div>
+      <label for="telefon" class="mb-1 block font-medium text-gray-700">Telefon</label>
+      <input type="tel" id="telefon" name="telefon" class="form-input">
+    </div>
+
+    <div>
+      <label for="type-jobb" class="mb-1 block font-medium text-gray-700">Type jobb</label>
+      <select id="type-jobb" name="type_jobb" class="form-input">
+        <option value="">Velg (valgfritt)</option>
+        {% for service in services %}
+        <option value="{{ service.title }}">{{ service.title }}</option>
+        {% endfor %}
+        <option value="Annet">Annet</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="melding" class="mb-1 block font-medium text-gray-700">Melding *</label>
+      <textarea id="melding" name="melding" rows="5" required class="form-input"></textarea>
+    </div>
+
+    <div>
+      <label for="bilder" class="mb-1 block font-medium text-gray-700">Last opp bilde (valgfritt)</label>
+      <input type="file" id="bilder" name="bilder" accept="image/*" multiple class="block w-full text-sm text-gray-600">
+    </div>
+
+    <button type="submit" class="btn-primary w-full !text-white sm:w-auto">Send forespørsel</button>
+    <p class="text-sm text-gray-500">* Obligatorisk felt. Du får svar fra oss innen 24 timer.</p>
+  </form>
+</section>

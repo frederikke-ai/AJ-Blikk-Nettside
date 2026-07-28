@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Privat",
+    "slug": "privat",
+    "description": "TODO: Kort beskrivelse av prosjekter for private boligeiere."
+  },
+  {
+    "title": "Borettslag/Sameie",
+    "slug": "borettslag-sameie",
+    "description": "TODO: Kort beskrivelse av prosjekter for borettslag og sameier."
+  },
+  {
+    "title": "Næringsbygg",
+    "slug": "naeringsbygg",
+    "description": "TODO: Kort beskrivelse av prosjekter for næringsbygg."
+  }
+]

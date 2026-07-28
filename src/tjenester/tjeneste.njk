@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: services
+  size: 1
+  alias: service
+permalink: "/tjenester/{{ service.slug }}/"
+eleventyComputed:
+  title: "{{ service.title }}"
+  description: "TODO: Skriv meta-beskrivelse for {{ service.title }}."
+---
+<section class="bg-brand text-white">
+  <div class="section section-py">
+    <p class="mb-2 text-sm text-white/60"><a href="/tjenester/" class="hover:text-accent-light">Tjenester</a> / {{ service.title }}</p>
+    <h1 class="text-3xl font-bold md:text-4xl">{{ service.title }}</h1>
+  </div>
+</section>
+
+<section class="section section-py grid gap-12 lg:grid-cols-3">
+  <div class="space-y-6 leading-relaxed text-gray-700 lg:col-span-2">
+    <div class="flex aspect-video items-center justify-center rounded-lg border border-gray-200 bg-gray-100 text-sm text-gray-400">
+      TODO: Bilde/eksempel som viser {{ service.title | lower }}
+    </div>
+
+    <p><!-- TODO --> TODO: Innledende avsnitt om {{ service.title | lower }} – hva det er og når det er aktuelt.</p>
+
+    <h2 class="text-xl font-semibold text-brand">Hva innebærer {{ service.title | lower }}?</h2>
+    <p><!-- TODO --> TODO: Beskriv arbeidsprosessen steg for steg.</p>
+    <ul class="list-inside list-disc space-y-1">
+      <li>TODO: Punkt 1</li>
+      <li>TODO: Punkt 2</li>
+      <li>TODO: Punkt 3</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold text-brand">Hvorfor velge AJ Blikk AS?</h2>
+    <p><!-- TODO --> TODO: Beskriv erfaring, kvalitet og eventuelle garantier.</p>
+  </div>
+
+  <aside class="h-fit rounded-lg border border-gray-200 bg-gray-50 p-6">
+    <h2 class="mb-4 font-semibold text-brand">Andre tjenester</h2>
+    <ul class="space-y-2 text-sm">
+      {% for other in services %}
+      {% if other.slug != service.slug %}
+      <li><a href="/tjenester/{{ other.slug }}/" class="text-gray-600 hover:text-accent">{{ other.title }}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    <a href="/gratis-befaring/" class="btn-primary mt-6 block text-center">Gratis befaring</a>
+  </aside>
+</section>
+
+{% include "partials/cta-banner.njk" %}

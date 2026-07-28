@@ -1,0 +1,46 @@
+<footer class="mt-16 bg-brand-dark text-white">
+  <div class="section grid gap-10 py-12 md:grid-cols-4">
+    <div>
+      <div class="mb-4 flex items-center gap-3">
+        <!-- TODO: Bytt ut med ekte logo-fil når den er levert -->
+        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-white/30 bg-white/10 text-[9px]">LOGO</span>
+        <span class="text-lg font-bold">{{ company.name }}</span>
+      </div>
+      <p class="text-sm text-white/70">Blikkenslagertjenester i Oslo og Akershus siden {{ company.founded }}.</p>
+    </div>
+
+    <div>
+      <h2 class="mb-3 font-semibold">Tjenester</h2>
+      <ul class="space-y-2 text-sm text-white/70">
+        {% for service in services %}
+        <li><a href="/tjenester/{{ service.slug }}/" class="hover:text-accent-light">{{ service.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="mb-3 font-semibold">Snarveier</h2>
+      <ul class="space-y-2 text-sm text-white/70">
+        <li><a href="/om-oss/" class="hover:text-accent-light">Om oss</a></li>
+        <li><a href="/prosjekter/" class="hover:text-accent-light">Prosjekter</a></li>
+        <li><a href="/kontakt/" class="hover:text-accent-light">Kontakt oss</a></li>
+        <li><a href="/gratis-befaring/" class="hover:text-accent-light">Gratis befaring</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="mb-3 font-semibold">Kontakt</h2>
+      <ul class="space-y-2 text-sm text-white/70">
+        <li>{{ company.address }}</li>
+        <li><a href="tel:{{ company.phoneRaw }}" class="hover:text-accent-light">{{ company.phone }}</a></li>
+        <li><a href="mailto:{{ company.email }}" class="hover:text-accent-light">{{ company.email }}</a></li>
+        <li>Org.nr: {{ company.orgNr }}</li>
+        <li>Åpningstider: {{ company.hours }}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-white/10 py-4 text-center text-xs text-white/50">
+    © {{ currentYear }} {{ company.name }}. Alle rettigheter reservert.
+  </div>
+</footer>
