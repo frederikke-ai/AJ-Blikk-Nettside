@@ -1,19 +1,10 @@
 <header class="sticky top-0 z-50 bg-white shadow-sm">
-  <!-- Toppbar -->
-  <div class="section flex items-center justify-between border-b border-gray-100 bg-brand-light py-2 text-sm text-gray-600">
-    <div class="flex items-center gap-4">
-      <a href="tel:{{ company.phoneRaw }}" class="hover:text-accent">{{ company.phone }}</a>
-      <a href="mailto:{{ company.email }}" class="hidden hover:text-accent sm:inline">{{ company.email }}</a>
-    </div>
-    <div class="hidden text-gray-500 sm:block">Åpningstider: {{ company.hours }}</div>
-  </div>
-
   <!-- Checkbox-hack for mobilmeny (krever ingen JavaScript) -->
   <input type="checkbox" id="nav-toggle" class="peer hidden">
 
   <div class="section flex items-center justify-between border-b border-gray-100 py-3">
     <a href="/" class="flex items-center">
-      <img src="/img/logo-aj-blikk.png" alt="{{ company.name }}" class="h-16 w-auto shrink-0 sm:h-20">
+      <img src="/img/logo-aj-blikk.png" alt="{{ company.name }}" class="h-20 w-auto shrink-0 sm:h-24">
     </a>
 
     <!-- Desktop-meny -->

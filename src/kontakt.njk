@@ -35,7 +35,15 @@ description: "Kontakt AJ Blikk AS – blikkenslager i Oslo og Akershus."
     <a href="/gratis-befaring/" class="btn-primary inline-block !text-white">Bestill gratis befaring</a>
   </div>
 
-  <div class="flex min-h-[300px] items-center justify-center rounded-lg border border-gray-200 bg-brand-light text-sm text-gray-400 lg:h-full">
-    TODO: Kart-embed (Google Maps) for {{ company.address }}
+  <div class="min-h-[300px] overflow-hidden rounded-lg border border-gray-200 lg:h-full">
+    <iframe
+      src="https://www.google.com/maps?q={{ company.address | urlencode }}&output=embed"
+      class="h-full min-h-[300px] w-full"
+      style="border:0"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Kart til {{ company.name }}, {{ company.address }}"
+    ></iframe>
   </div>
 </section>

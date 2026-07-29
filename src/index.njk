@@ -8,13 +8,11 @@ description: "TODO: Skriv meta-beskrivelse for forsiden (maks ca. 155 tegn)."
   <div class="section section-py grid items-center gap-10 md:grid-cols-2">
     <div>
       <p class="mb-3 font-semibold uppercase tracking-wide text-accent">Blikkenslager i Oslo og Akershus</p>
-      <h1 class="mb-6 text-3xl font-bold leading-tight text-brand md:text-5xl">
-        <!-- TODO: Skriv ferdig hovedoverskrift for forsiden -->
-        TODO: Hovedoverskrift, f.eks. «Solid håndverk på tak og fasade siden 1995»
+      <h1 class="mb-5 text-2xl font-bold leading-tight text-brand md:text-3xl">
+        Håndverk og presisjon siden 1995
       </h1>
       <p class="mb-8 max-w-xl text-gray-600">
-        <!-- TODO: Skriv ferdig ingress -->
-        TODO: Kort ingresstekst som beskriver hva AJ Blikk AS tilbyr og hvorfor kunden bør velge dere.
+        Vi leverer blant annet takrenner, takomlegging, pipebeslag, vindusblekk og sokkelbeslag — Alltid til avtalt tid og pris, med fokus på kvalitet og god dialog med kunden.
       </p>
       <div class="flex flex-wrap gap-4">
         <a href="/gratis-befaring/" class="btn-primary">Gratis befaring</a>
@@ -34,10 +32,10 @@ description: "TODO: Skriv meta-beskrivelse for forsiden (maks ca. 155 tegn)."
     </div>
     <div class="order-1 md:order-2">
       <h2 class="mb-4 text-2xl font-bold text-brand md:text-3xl">Håndverk i andre generasjon</h2>
-      <p class="mb-6 text-gray-600">
-        <!-- TODO: Skriv en kort tekst-teaser (IKKE kopi av Om oss-teksten) -->
-        TODO: Kort tekst-teaser om selskapets historie og verdier, med lenke videre til Om oss.
-      </p>
+      <blockquote class="mb-6 border-l-4 border-accent pl-6 text-lg italic text-brand">
+        «Vi tar med oss arven etter fem tiår i bransjen inn i moderne løsninger og prosjekter, med samme standard for håndverk og kundebehandling som har kjennetegnet selskapet fra starten.»
+        <footer class="mt-2 text-sm not-italic text-gray-500">— Anders Haider</footer>
+      </blockquote>
       <a href="/om-oss/" class="font-semibold text-brand hover:text-accent">Les mer om oss →</a>
     </div>
   </div>
@@ -63,9 +61,13 @@ description: "TODO: Skriv meta-beskrivelse for forsiden (maks ca. 155 tegn)."
   </div>
   <div class="grid gap-6 md:grid-cols-3">
     {% for cat in projectCategories %}
-    <a href="/prosjekter/{{ cat.slug }}/" class="block rounded-lg bg-brand-light p-8 text-center ring-1 ring-black/5 transition hover:shadow-md">
+    <a href="/prosjekter/{{ cat.slug }}/" class="group block rounded-lg bg-brand-light p-8 text-center ring-1 ring-black/5 transition hover:shadow-md">
       <h3 class="mb-2 text-lg font-semibold text-brand">{{ cat.title }}</h3>
-      <p class="text-sm text-gray-500">{{ cat.description }}</p>
+      <p class="mb-4 text-sm text-gray-500">{{ cat.description }}</p>
+      <span class="inline-flex items-center gap-1 text-sm font-semibold text-accent">
+        Se eksempler
+        <svg class="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+      </span>
     </a>
     {% endfor %}
   </div>
