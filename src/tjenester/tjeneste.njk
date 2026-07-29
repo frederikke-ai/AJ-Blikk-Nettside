@@ -9,16 +9,16 @@ eleventyComputed:
   title: "{{ service.title }}"
   description: "TODO: Skriv meta-beskrivelse for {{ service.title }}."
 ---
-<section class="bg-brand text-white">
+<section class="border-b border-gray-200 bg-brand-light">
   <div class="section section-py">
-    <p class="mb-2 text-sm text-white/60"><a href="/tjenester/" class="hover:text-accent-light">Tjenester</a> / {{ service.title }}</p>
-    <h1 class="text-3xl font-bold md:text-4xl">{{ service.title }}</h1>
+    <p class="mb-2 text-sm text-gray-500"><a href="/tjenester/" class="hover:text-accent">Tjenester</a> / {{ service.title }}</p>
+    <h1 class="text-3xl font-bold text-brand md:text-4xl">{{ service.title }}</h1>
   </div>
 </section>
 
 <section class="section section-py grid gap-12 lg:grid-cols-3">
   <div class="space-y-6 leading-relaxed text-gray-700 lg:col-span-2">
-    <div class="flex aspect-video items-center justify-center rounded-lg border border-gray-200 bg-gray-100 text-sm text-gray-400">
+    <div class="flex aspect-video items-center justify-center rounded-lg border border-gray-200 bg-brand-light text-sm text-gray-400">
       TODO: Bilde/eksempel som viser {{ service.title | lower }}
     </div>
 
@@ -36,7 +36,7 @@ eleventyComputed:
     <p><!-- TODO --> TODO: Beskriv erfaring, kvalitet og eventuelle garantier.</p>
   </div>
 
-  <aside class="h-fit rounded-lg border border-gray-200 bg-gray-50 p-6">
+  <aside class="h-fit rounded-lg border border-gray-200 bg-brand-light p-6">
     <h2 class="mb-4 font-semibold text-brand">Andre tjenester</h2>
     <ul class="space-y-2 text-sm">
       {% for other in services %}

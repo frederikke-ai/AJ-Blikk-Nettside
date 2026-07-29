@@ -3,15 +3,16 @@ layout: layouts/base.njk
 title: Hjem
 description: "TODO: Skriv meta-beskrivelse for forsiden (maks ca. 155 tegn)."
 ---
-<section class="bg-brand text-white">
+{% import "partials/service-card.njk" as serviceCard %}
+<section class="border-b border-gray-200 bg-brand-light">
   <div class="section section-py grid items-center gap-10 md:grid-cols-2">
     <div>
-      <p class="mb-3 font-semibold uppercase tracking-wide text-accent-light">Blikkenslager i Oslo og Akershus</p>
-      <h1 class="mb-6 text-3xl font-bold leading-tight md:text-5xl">
+      <p class="mb-3 font-semibold uppercase tracking-wide text-accent">Blikkenslager i Oslo og Akershus</p>
+      <h1 class="mb-6 text-3xl font-bold leading-tight text-brand md:text-5xl">
         <!-- TODO: Skriv ferdig hovedoverskrift for forsiden -->
         TODO: Hovedoverskrift, f.eks. «Solid håndverk på tak og fasade siden 1995»
       </h1>
-      <p class="mb-8 max-w-xl text-white/80">
+      <p class="mb-8 max-w-xl text-gray-600">
         <!-- TODO: Skriv ferdig ingress -->
         TODO: Kort ingresstekst som beskriver hva AJ Blikk AS tilbyr og hvorfor kunden bør velge dere.
       </p>
@@ -20,7 +21,7 @@ description: "TODO: Skriv meta-beskrivelse for forsiden (maks ca. 155 tegn)."
         <a href="/tjenester/" class="btn-outline">Se våre tjenester</a>
       </div>
     </div>
-    <div class="flex aspect-video items-center justify-center rounded-lg border border-white/20 bg-white/10 text-sm text-white/50">
+    <div class="flex aspect-video items-center justify-center rounded-lg border border-gray-200 bg-white text-sm text-gray-400">
       TODO: Bilde av prosjekt / team
     </div>
   </div>
@@ -28,7 +29,7 @@ description: "TODO: Skriv meta-beskrivelse for forsiden (maks ca. 155 tegn)."
 
 <section class="section section-py">
   <div class="grid items-center gap-10 md:grid-cols-2">
-    <div class="order-2 flex aspect-video items-center justify-center rounded-lg border border-gray-200 bg-gray-100 text-sm text-gray-400 md:order-1">
+    <div class="order-2 flex aspect-video items-center justify-center rounded-lg border border-gray-200 bg-brand-light text-sm text-gray-400 md:order-1">
       TODO: Bilde av Anders og Jørgen / verksted
     </div>
     <div class="order-1 md:order-2">
@@ -42,20 +43,16 @@ description: "TODO: Skriv meta-beskrivelse for forsiden (maks ca. 155 tegn)."
   </div>
 </section>
 
-<section class="bg-gray-50">
-  <div class="section section-py">
-    <div class="mx-auto mb-12 max-w-2xl text-center">
-      <h2 class="mb-4 text-2xl font-bold text-brand md:text-3xl">Våre tjenester</h2>
-      <p class="text-gray-600"><!-- TODO --> TODO: Kort ingress som introduserer tjenestetilbudet.</p>
-    </div>
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {% for service in services %}
-      <a href="/tjenester/{{ service.slug }}/" class="block rounded-lg border border-gray-200 bg-white p-6 transition hover:border-accent hover:shadow-md">
-        <h3 class="mb-2 font-semibold text-brand">{{ service.title }}</h3>
-        <p class="text-sm text-gray-500">TODO: Kort beskrivelse av {{ service.title | lower }}.</p>
-      </a>
-      {% endfor %}
-    </div>
+<section class="section section-py">
+  <div class="mx-auto mb-12 max-w-2xl text-center">
+    <h2 class="mb-3 text-2xl font-bold uppercase tracking-wide text-brand md:text-3xl">Våre tjenester</h2>
+    <span class="mx-auto mb-4 block h-1 w-14 rounded-full bg-accent"></span>
+    <p class="text-gray-600"><!-- TODO --> TODO: Kort ingress som introduserer tjenestetilbudet.</p>
+  </div>
+  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    {% for service in services %}
+    {{ serviceCard.card(service) }}
+    {% endfor %}
   </div>
 </section>
 
@@ -66,7 +63,7 @@ description: "TODO: Skriv meta-beskrivelse for forsiden (maks ca. 155 tegn)."
   </div>
   <div class="grid gap-6 md:grid-cols-3">
     {% for cat in projectCategories %}
-    <a href="/prosjekter/{{ cat.slug }}/" class="block rounded-lg border border-gray-200 bg-white p-8 text-center transition hover:border-accent hover:shadow-md">
+    <a href="/prosjekter/{{ cat.slug }}/" class="block rounded-lg bg-brand-light p-8 text-center ring-1 ring-black/5 transition hover:shadow-md">
       <h3 class="mb-2 text-lg font-semibold text-brand">{{ cat.title }}</h3>
       <p class="text-sm text-gray-500">{{ cat.description }}</p>
     </a>

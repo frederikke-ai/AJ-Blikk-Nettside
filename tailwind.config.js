@@ -4,13 +4,14 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          DEFAULT: "#002060",
-          dark: "#00143f",
-          light: "#0a3a8f",
+          DEFAULT: "#3d3835",
+          dark: "#2b2724",
+          light: "#f6f4f2",
         },
         accent: {
-          DEFAULT: "#d97706",
-          light: "#f59e0b",
+          DEFAULT: "#963a24",
+          light: "#b06b5a",
+          dark: "#752d1c",
         },
       },
       fontFamily: {
