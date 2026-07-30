@@ -23,6 +23,9 @@ eleventyComputed:
     </div>
 
     <p><!-- TODO --> TODO: Innledende avsnitt om {{ service.title | lower }} – hva det er og når det er aktuelt.</p>
+    {% if service.altTerm %}
+    <p class="text-sm text-gray-500">Også kjent som {{ service.altTerm }}.</p>
+    {% endif %}
 
     <h2 class="text-xl font-semibold text-brand">Hva innebærer {{ service.title | lower }}?</h2>
     <p><!-- TODO --> TODO: Beskriv arbeidsprosessen steg for steg.</p>

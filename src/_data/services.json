@@ -1,5 +1,5 @@
 [
-  { "title": "Takomlegging", "slug": "takomlegging" },
+  { "title": "Taktekking", "slug": "taktekking", "altTerm": "takomlegging" },
   { "title": "Takstiger", "slug": "takstiger" },
   { "title": "Takhatt", "slug": "takhatt" },
   { "title": "Pipebeslag", "slug": "pipebeslag" },
