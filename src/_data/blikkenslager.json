@@ -2,7 +2,8 @@
   {
     "title": "Taktekking",
     "slug": "taktekking",
-    "intro": "Trenger taket ditt ny tekking, eller er du usikker på tilstanden? AJ Blikk er en erfaren taktekker i Oslo, Bærum og Asker, og leverer taktekking (også kjent som takomlegging) for både flate og skrå tak. Vi ser på helheten: lufting, isolasjon og materialvalg, slik at taket holder i mange år fremover.",
+    "short": "Ny taktekking for flate og skrå tak, i Bærum, Asker og Oslo.",
+    "intro": "Trenger taket ditt ny tekking, eller er du usikker på tilstanden? AJ Blikk er en erfaren taktekker i Bærum, Asker og Oslo, og leverer taktekking (også kjent som takomlegging) for både flate og skrå tak. Vi ser på helheten: lufting, isolasjon og materialvalg, slik at taket holder i mange år fremover.",
     "bullets": [
       "Befaring og vurdering av eksisterende tak og undertak",
       "Taktekking på både skråtak og flatt tak, med riktig fall og god fuktsikring",
@@ -15,6 +16,7 @@
   {
     "title": "Gradrenner",
     "slug": "gradrenner",
+    "short": "Montering og reparasjon av gradrenner for et tett tak.",
     "intro": "Gradrenner er ofte der lekkasjer starter, og riktig utførelse er avgjørende for et tett tak. Vi monterer og reparerer gradrenner tilpasset takets form og materialer.",
     "bullets": [
       "Montering av nye gradrenner ved takomlegging eller tilbygg",
@@ -26,6 +28,7 @@
   {
     "title": "Båndtekking",
     "slug": "bandtekking",
+    "short": "Solid båndtekking i stål, kobber, sink og flere metaller.",
     "intro": "Båndtekking er et solid og tradisjonsrikt alternativ for tak som skal vare lenge, og krever nøyaktig fagarbeid. Vi utfører båndtekking i stål, kobber, sink og flere andre metaller, tilpasset bygget og budsjettet ditt.",
     "bullets": [
       "Båndtekking i stål, kobber, sink eller aluminium etter ønske og budsjett",
@@ -37,6 +40,7 @@
   {
     "title": "Taksikring",
     "slug": "taksikring",
+    "short": "Takstiger, snøfangere og sikkerhetsutstyr for taket ditt.",
     "intro": "Vi leverer taksikring i form av takstiger, snøfangere og annet sikkerhetsutstyr, slik at både de som ferdes på taket og de som beveger seg rundt huset er trygge. Taksikring er også ofte et krav fra forsikringsselskap og brannvesen.",
     "bullets": [
       "Snøfangere som hindrer snø og is i å rase ned fra taket",
@@ -49,6 +53,7 @@
   {
     "title": "Snøfanger",
     "slug": "snofanger",
+    "short": "Nye snøfangere, og ettermontering på eksisterende tak.",
     "intro": "Snøfangere hindrer snø og is i å rase ned fra taket, og er ofte et krav på bebygde eiendommer. Vi monterer nye snøfangere, og ettermonterer også snøfangere på eksisterende tak, noe mange lurer på om er mulig.",
     "bullets": [
       "Ettermontering av snøfanger på eksisterende tak, uten at hele taket må legges om",
@@ -60,6 +65,7 @@
   {
     "title": "Takstige",
     "slug": "takstige",
+    "short": "Fastmontert takstige for trygg og lovlig adkomst til taket.",
     "intro": "En fastmontert takstige gir trygg og lovlig tilgang til taket, både for vedlikehold og feiing. Vi monterer takstiger tilpasset takform og adkomstbehov.",
     "bullets": [
       "Montering av godkjente takstiger tilpasset takets helning og tekke",
@@ -71,6 +77,7 @@
   {
     "title": "Takrenner og nedløp",
     "slug": "takrenner-nedlop",
+    "short": "Montering og bytte av takrenner og nedløp.",
     "intro": "Takrenner og nedløp hører sammen: fungerer det ene dårlig, går det ofte ut over det andre. Vi monterer nye takrenner med nedløp, og bytter ut gamle løsninger som ikke lenger holder tett.",
     "bullets": [
       "Montering av nye takrenner og nedløp ved nybygg eller taktekking",
@@ -82,6 +89,7 @@
   {
     "title": "Pipebeslag",
     "slug": "pipebeslag",
+    "short": "Tett pipebeslag som hindrer lekkasjer rundt pipen.",
     "intro": "Et pipebeslag som ikke er tett, er en av de vanligste årsakene til lekkasjer rundt pipe. Vi monterer og reparerer pipebeslag i stål, kobber, sink og andre metaller, tilpasset pipe og taktype.",
     "bullets": [
       "Nytt pipebeslag ved taktekking eller renovering av pipe",
@@ -93,6 +101,7 @@
   {
     "title": "Takhatt, luftehatt og soilhatt",
     "slug": "takhatt",
+    "short": "Riktig ventilasjon med takhatt, luftehatt og soilhatt.",
     "intro": "God lufting og ventilasjon av taket forlenger levetiden og forebygger fukt. Vi monterer takhatter, luftehatter og soilhatter tilpasset ditt tak og behov.",
     "bullets": [
       "Montering av takhatt, luftehatt og soilhatt ved nybygg og taktekking",
@@ -104,6 +113,7 @@
   {
     "title": "Peisplate",
     "slug": "peisplate",
+    "short": "Peisplater tilpasset din peis, i solide materialer.",
     "intro": "En peisplate beskytter mot varme og gnister, og skal monteres nøyaktig for å fungere som den skal. Vi leverer og monterer peisplater tilpasset din peis og dine materialvalg.",
     "bullets": [
       "Tilpasning og montering av peisplate ved nytt ildsted eller peis",
@@ -115,6 +125,7 @@
   {
     "title": "Lekkasje",
     "slug": "lekkasje",
+    "short": "Vi finner og utbedrer lekkasjer i hele huset, ikke bare taket.",
     "intro": "Lekkasjer handler ikke bare om taket. Vann kan trenge inn rundt pipe, ved grunnmur og andre steder vann finner veien inn i huset. AJ Blikk har bred kompetanse på å lokalisere og utbedre lekkasjeproblematikk i hele huset, ikke bare på taket.",
     "bullets": [
       "Feilsøking og kartlegging av fukt- og lekkasjekilder",

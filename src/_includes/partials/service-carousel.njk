@@ -1,6 +1,7 @@
 {% import "partials/service-card.njk" as serviceCard %}
-{% macro section(items, basePath, seeAllUrl, seeAllText) %}
+{% macro section(items, basePath, seeAllUrl, seeAllText, fadeFrom="from-white") %}
 <div data-carousel class="relative">
+  <div class="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l {{ fadeFrom }} to-transparent sm:w-20"></div>
   <div data-carousel-track class="carousel-track">
     {% for service in items %}
     <div class="carousel-item">

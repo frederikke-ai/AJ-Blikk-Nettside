@@ -9,9 +9,9 @@ module.exports = {
           light: "#F2F4F7",
         },
         accent: {
-          DEFAULT: "#011C6B",
-          light: "#1E3A8A",
-          dark: "#010D38",
+          DEFAULT: "#011142",
+          light: "#525d7e",
+          dark: "#000b2e",
         },
       },
       fontFamily: {

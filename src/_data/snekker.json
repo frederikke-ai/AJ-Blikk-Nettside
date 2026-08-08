@@ -2,6 +2,7 @@
   {
     "title": "Terrasse",
     "slug": "terrasse",
+    "short": "Bygging og reparasjon av terrasser i tre og kompositt.",
     "intro": "En ny eller oppgradert terrasse gir mer bruksareal og hverdagsglede. Vi bygger og reparerer terrasser tilpasset hus og hage.",
     "bullets": [
       "Nybygg av terrasse i tre eller kompositt",
@@ -13,6 +14,7 @@
   {
     "title": "Rekkverk",
     "slug": "rekkverk",
+    "short": "Sikkert og pent rekkverk til terrasse, trapp og balkong.",
     "intro": "Rekkverk skal både være sikkert og se bra ut, enten det er til terrasse, trapp eller balkong. Vi monterer rekkverk tilpasset dine ønsker og gjeldende krav.",
     "bullets": [
       "Rekkverk til terrasse, trapp og balkong",
@@ -24,6 +26,7 @@
   {
     "title": "Lettvegger og gipsplater",
     "slug": "lettvegger-gipsplater",
+    "short": "Lettvegger og gipsplater til oppussing og romdeling.",
     "intro": "Skal du dele opp et rom, isolere bedre eller pusse opp innvendig? Vi setter opp lettvegger og monterer gipsplater med solid fagarbeid.",
     "bullets": [
       "Oppsett av nye lettvegger og bindingsverk",
@@ -35,6 +38,7 @@
   {
     "title": "Panel",
     "slug": "panel",
+    "short": "Nytt panel innvendig og utvendig, med solid fagarbeid.",
     "intro": "Nytt panel gir fasaden eller rommet et løft, og godt utført arbeid gir lang levetid. Vi monterer panel både innvendig og utvendig.",
     "bullets": [
       "Utskifting av gammelt eller skadet fasadepanel",
@@ -46,6 +50,7 @@
   {
     "title": "Kjøkkenmontering",
     "slug": "kjokkenmontering",
+    "short": "Presis montering av nytt kjøkken eller oppgradering.",
     "intro": "Et nytt kjøkken skal sitte riktig fra dag én. Vi monterer kjøkken med nøyaktighet, enten det er et komplett nytt kjøkken eller oppgradering av deler.",
     "bullets": [
       "Montering av kjøkkeninnredning, skap og benkeplater",
