@@ -6,7 +6,7 @@ description: "Book gratis og uforpliktende befaring med AJ Blikk AS."
 <section class="border-b border-gray-200 bg-brand-light">
   <div class="section section-py">
     <h1 class="text-3xl font-bold text-brand md:text-4xl">Gratis befaring</h1>
-    <p class="mt-3 max-w-2xl text-gray-600">Fyll ut skjemaet under, så tar vi kontakt for å avtale en gratis og uforpliktende befaring. Du får svar fra oss innen 24 timer.</p>
+    <p class="mt-3 max-w-2xl text-gray-600">Fyll ut skjemaet under, så tar vi kontakt for å avtale en gratis og uforpliktende befaring. Vi kommer tilbake til deg så fort som mulig.</p>
   </div>
 </section>
 
@@ -50,9 +50,16 @@ description: "Book gratis og uforpliktende befaring med AJ Blikk AS."
       <label for="type-jobb" class="mb-1 block font-medium text-gray-700">Type jobb</label>
       <select id="type-jobb" name="type_jobb" class="form-input">
         <option value="">Velg (valgfritt)</option>
-        {% for service in services %}
-        <option value="{{ service.title }}">{{ service.title }}</option>
-        {% endfor %}
+        <optgroup label="Blikkenslager">
+          {% for service in blikkenslager %}
+          <option value="{{ service.title }}">{{ service.title }}</option>
+          {% endfor %}
+        </optgroup>
+        <optgroup label="Snekker">
+          {% for service in snekker %}
+          <option value="{{ service.title }}">{{ service.title }}</option>
+          {% endfor %}
+        </optgroup>
         <option value="Annet">Annet</option>
       </select>
     </div>
@@ -68,6 +75,6 @@ description: "Book gratis og uforpliktende befaring med AJ Blikk AS."
     </div>
 
     <button type="submit" class="btn-primary w-full !text-white sm:w-auto">Send forespørsel</button>
-    <p class="text-sm text-gray-500">* Obligatorisk felt. Du får svar fra oss innen 24 timer.</p>
+    <p class="text-sm text-gray-500">* Obligatorisk felt. Vi kommer tilbake til deg så fort som mulig.</p>
   </form>
 </section>

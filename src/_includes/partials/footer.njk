@@ -2,22 +2,28 @@
   <div class="section grid gap-10 py-12 md:grid-cols-4">
     <div>
       <div class="mb-4 flex items-center">
-        <img src="/img/logo-aj-blikk.png" alt="{{ company.name }}" class="h-16 w-auto shrink-0">
+        <img src="/img/logo-aj-blikk.png" alt="{{ company.name }}" class="h-28 w-auto shrink-0">
       </div>
-      <p class="text-sm text-gray-600">Blikkenslagertjenester i Oslo og Akershus siden {{ company.founded }}.</p>
+      <p class="text-sm text-gray-600">Blikkenslager i Oslo, Bærum og Asker siden {{ company.founded }}.</p>
     </div>
 
     <div>
-      <h2 class="mb-3 font-semibold">Tjenester</h2>
+      <h2 class="mb-3 font-semibold">Blikkenslager</h2>
       <ul class="space-y-2 text-sm text-gray-600">
-        {% for service in services %}
-        <li><a href="/tjenester/{{ service.slug }}/" class="hover:text-accent">{{ service.title }}</a></li>
+        {% for service in blikkenslager %}
+        <li><a href="/blikkenslager/{{ service.slug }}/" class="hover:text-accent">{{ service.title }}</a></li>
         {% endfor %}
       </ul>
     </div>
 
     <div>
-      <h2 class="mb-3 font-semibold">Snarveier</h2>
+      <h2 class="mb-3 font-semibold">Snekker</h2>
+      <ul class="space-y-2 text-sm text-gray-600">
+        {% for service in snekker %}
+        <li><a href="/snekker/{{ service.slug }}/" class="hover:text-accent">{{ service.title }}</a></li>
+        {% endfor %}
+      </ul>
+      <h2 class="mb-3 mt-6 font-semibold">Snarveier</h2>
       <ul class="space-y-2 text-sm text-gray-600">
         <li><a href="/om-oss/" class="hover:text-accent">Om oss</a></li>
         <li><a href="/prosjekter/" class="hover:text-accent">Prosjekter</a></li>
@@ -34,6 +40,7 @@
         <li><a href="mailto:{{ company.email }}" class="hover:text-accent">{{ company.email }}</a></li>
         <li>Org.nr: {{ company.orgNr }}</li>
         <li>Åpningstider: {{ company.hours }}</li>
+        <li>Arbeidsområde: {{ company.area }}</li>
       </ul>
     </div>
   </div>

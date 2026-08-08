@@ -1,17 +1,17 @@
 ---
 layout: layouts/base.njk
 pagination:
-  data: services
+  data: snekker
   size: 1
   alias: service
-permalink: "/tjenester/{{ service.slug }}/"
+permalink: "/snekker/{{ service.slug }}/"
 eleventyComputed:
   title: "{{ service.title }}"
-  description: "TODO: Skriv meta-beskrivelse for {{ service.title }}."
+  description: "{{ service.title }} i Bærum, Asker og Stor-Oslo. Kontakt AJ Blikk AS for befaring og tilbud."
 ---
 <section class="border-b border-gray-200 bg-brand-light">
   <div class="section section-py">
-    <p class="mb-2 text-sm text-gray-500"><a href="/tjenester/" class="hover:text-accent">Tjenester</a> / {{ service.title }}</p>
+    <p class="mb-2 text-sm text-gray-500"><a href="/snekker/" class="hover:text-accent">Snekker</a> / {{ service.title }}</p>
     <h1 class="text-3xl font-bold text-brand md:text-4xl">{{ service.title }}</h1>
   </div>
 </section>
@@ -22,29 +22,25 @@ eleventyComputed:
       TODO: Bilde/eksempel som viser {{ service.title | lower }}
     </div>
 
-    <p><!-- TODO --> TODO: Innledende avsnitt om {{ service.title | lower }} – hva det er og når det er aktuelt.</p>
-    {% if service.altTerm %}
-    <p class="text-sm text-gray-500">Også kjent som {{ service.altTerm }}.</p>
-    {% endif %}
+    <p>{{ service.intro }}</p>
 
     <h2 class="text-xl font-semibold text-brand">Hva innebærer {{ service.title | lower }}?</h2>
-    <p><!-- TODO --> TODO: Beskriv arbeidsprosessen steg for steg.</p>
     <ul class="list-inside list-disc space-y-1">
-      <li>TODO: Punkt 1</li>
-      <li>TODO: Punkt 2</li>
-      <li>TODO: Punkt 3</li>
+      {% for bullet in service.bullets %}
+      <li>{{ bullet }}</li>
+      {% endfor %}
     </ul>
 
     <h2 class="text-xl font-semibold text-brand">Hvorfor velge AJ Blikk AS?</h2>
-    <p><!-- TODO --> TODO: Beskriv erfaring, kvalitet og eventuelle garantier.</p>
+    <p>{{ service.why }}</p>
   </div>
 
   <aside class="h-fit rounded-lg border border-gray-200 bg-brand-light p-6">
-    <h2 class="mb-4 font-semibold text-brand">Andre tjenester</h2>
+    <h2 class="mb-4 font-semibold text-brand">Andre tjenester innen snekker</h2>
     <ul class="space-y-2 text-sm">
-      {% for other in services %}
+      {% for other in snekker %}
       {% if other.slug != service.slug %}
-      <li><a href="/tjenester/{{ other.slug }}/" class="text-gray-600 hover:text-accent">{{ other.title }}</a></li>
+      <li><a href="/snekker/{{ other.slug }}/" class="text-gray-600 hover:text-accent">{{ other.title }}</a></li>
       {% endif %}
       {% endfor %}
     </ul>

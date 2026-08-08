@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }} | {{ company.name }}</title>
-  <meta name="description" content="{{ description or (company.name + ' – blikkenslager i Oslo og Akershus.') }}">
+  <meta name="description" content="{{ description or (company.name + ' er blikkenslager i Oslo, Bærum og Asker. Blikkenslager- og snekkertjenester i hele Stor-Oslo.') }}">
   <link rel="stylesheet" href="/css/output.css">
 </head>
 <body class="flex min-h-screen flex-col bg-white font-sans text-gray-800 antialiased">
@@ -13,5 +13,6 @@
     {{ content | safe }}
   </main>
   {% include "partials/footer.njk" %}
+  <script src="/js/carousel.js" defer></script>
 </body>
 </html>

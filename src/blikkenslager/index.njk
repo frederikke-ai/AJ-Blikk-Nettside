@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+title: Blikkenslager
+description: "Blikkenslager i Oslo, Bærum og Asker. AJ Blikk AS leverer taktekking, takrenner, pipebeslag, taksikring og mer i hele Stor-Oslo."
+---
+{% import "partials/service-card.njk" as serviceCard %}
+<section class="border-b border-gray-200 bg-brand-light">
+  <div class="section section-py">
+    <h1 class="text-3xl font-bold text-brand md:text-4xl">Blikkenslager</h1>
+    <p class="mt-3 max-w-2xl text-gray-600">AJ Blikk AS er din blikkenslager i Oslo, Bærum og Asker. Vi utfører alt fra taktekking og takrenner til pipebeslag og taksikring, for private boligeiere, borettslag/sameier og næringsbygg i hele Stor-Oslo.</p>
+  </div>
+</section>
+
+<section class="section section-py">
+  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    {% for service in blikkenslager %}
+    {{ serviceCard.card(service, "blikkenslager") }}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="bg-brand-light">
+  <div class="section section-py grid items-center gap-10 md:grid-cols-2">
+    <div>
+      <h2 class="mb-4 text-2xl font-bold text-brand md:text-3xl">Skal du montere selv? Kjøp tilpasset materiale hos oss</h2>
+      <p class="mb-4 text-gray-700">Du trenger ikke nødvendigvis å bestille hele jobben hos oss. Vi selger også blikkenslagermateriale i stål, kobber, aluminium, sink, messing og galvanisert stål, kappet og knekket til nøyaktig det målet og den formen du trenger.</p>
+      <p class="mb-6 text-gray-700">Kom innom og hent materialet ferdig tilpasset, så tar du selv hånd om monteringen.</p>
+      <a href="/kontakt/" class="btn-primary inline-block !text-white">Ta kontakt om materiale</a>
+    </div>
+    <div class="flex aspect-video items-center justify-center rounded-lg border border-gray-200 bg-white text-sm text-gray-400">
+      TODO: Bilde fra verksted / kapping av materiale
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta-banner.njk" %}

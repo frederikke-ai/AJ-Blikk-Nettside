@@ -1,0 +1,78 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: blikkenslager
+  size: 1
+  alias: service
+permalink: "/blikkenslager/{{ service.slug }}/"
+eleventyComputed:
+  title: "{{ service.title }}"
+  description: "{{ service.title }} i Bærum, Asker og Stor-Oslo. Kontakt AJ Blikk AS for befaring og tilbud."
+---
+<section class="border-b border-gray-200 bg-brand-light">
+  <div class="section section-py">
+    <p class="mb-2 text-sm text-gray-500"><a href="/blikkenslager/" class="hover:text-accent">Blikkenslager</a> / {{ service.title }}</p>
+    <h1 class="text-3xl font-bold text-brand md:text-4xl">{{ service.title }}</h1>
+  </div>
+</section>
+
+<section class="section section-py grid gap-12 lg:grid-cols-3">
+  <div class="space-y-6 leading-relaxed text-gray-700 lg:col-span-2">
+    <div class="flex aspect-video items-center justify-center rounded-lg border border-gray-200 bg-brand-light text-sm text-gray-400">
+      TODO: Bilde/eksempel som viser {{ service.title | lower }}
+    </div>
+
+    <p>{{ service.intro }}</p>
+
+    {% if service.ctaQuestion %}
+    <div class="rounded-lg border-l-4 border-accent bg-brand-light p-6">
+      <h2 class="mb-2 text-lg font-bold text-brand">{{ service.ctaQuestion }}</h2>
+      <p class="mb-4 text-gray-700">{{ service.ctaText }}</p>
+      <a href="/gratis-befaring/" class="btn-primary inline-block !text-white">Bestill gratis befaring</a>
+    </div>
+    {% endif %}
+
+    <h2 class="text-xl font-semibold text-brand">Hva innebærer {{ service.title | lower }}?</h2>
+    <ul class="list-inside list-disc space-y-1">
+      {% for bullet in service.bullets %}
+      <li>{{ bullet }}</li>
+      {% endfor %}
+    </ul>
+
+    {% if service.children %}
+    <h2 class="text-xl font-semibold text-brand">Les mer</h2>
+    <ul class="list-inside list-disc space-y-1">
+      {% for childSlug in service.children %}
+      {% for child in blikkenslager %}
+      {% if child.slug == childSlug %}
+      <li><a href="/blikkenslager/{{ child.slug }}/" class="font-medium text-accent hover:underline">{{ child.title }}</a></li>
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <h2 class="text-xl font-semibold text-brand">Hvorfor velge AJ Blikk AS?</h2>
+    <p>{{ service.why }}</p>
+
+    {% if service.note %}
+    <p class="text-sm text-gray-500">{{ service.note }}</p>
+    {% endif %}
+
+    {% include "partials/materials-list.njk" %}
+  </div>
+
+  <aside class="h-fit rounded-lg border border-gray-200 bg-brand-light p-6">
+    <h2 class="mb-4 font-semibold text-brand">Andre tjenester innen blikkenslager</h2>
+    <ul class="space-y-2 text-sm">
+      {% for other in blikkenslager %}
+      {% if other.slug != service.slug %}
+      <li><a href="/blikkenslager/{{ other.slug }}/" class="text-gray-600 hover:text-accent">{{ other.title }}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    <a href="/gratis-befaring/" class="btn-primary mt-6 block text-center">Gratis befaring</a>
+  </aside>
+</section>
+
+{% include "partials/cta-banner.njk" %}

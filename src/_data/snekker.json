@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Terrasse",
+    "slug": "terrasse",
+    "intro": "En ny eller oppgradert terrasse gir mer bruksareal og hverdagsglede. Vi bygger og reparerer terrasser tilpasset hus og hage.",
+    "bullets": [
+      "Nybygg av terrasse i tre eller kompositt",
+      "Reparasjon og utskifting av bord, bjelkelag og rekkverk",
+      "Tilpasning til eksisterende fasade og uteareal"
+    ],
+    "why": "Usikker på hva som er mulig hos deg? Vi tar gjerne en uforpliktende prat."
+  },
+  {
+    "title": "Rekkverk",
+    "slug": "rekkverk",
+    "intro": "Rekkverk skal både være sikkert og se bra ut, enten det er til terrasse, trapp eller balkong. Vi monterer rekkverk tilpasset dine ønsker og gjeldende krav.",
+    "bullets": [
+      "Rekkverk til terrasse, trapp og balkong",
+      "Utskifting av gammelt eller skadet rekkverk",
+      "Tilpasning til byggets stil og eksisterende materialer"
+    ],
+    "why": "Ta gjerne kontakt for en uforpliktende prat om løsning og materialvalg."
+  },
+  {
+    "title": "Lettvegger og gipsplater",
+    "slug": "lettvegger-gipsplater",
+    "intro": "Skal du dele opp et rom, isolere bedre eller pusse opp innvendig? Vi setter opp lettvegger og monterer gipsplater med solid fagarbeid.",
+    "bullets": [
+      "Oppsett av nye lettvegger og bindingsverk",
+      "Montering av gipsplater ved oppussing eller ombygging",
+      "Tilpasning for elektrikere, rørleggere og andre fag i prosjektet"
+    ],
+    "why": "Usikker på hva prosjektet ditt krever? Vi tar gjerne en uforpliktende prat."
+  },
+  {
+    "title": "Panel",
+    "slug": "panel",
+    "intro": "Nytt panel gir fasaden eller rommet et løft, og godt utført arbeid gir lang levetid. Vi monterer panel både innvendig og utvendig.",
+    "bullets": [
+      "Utskifting av gammelt eller skadet fasadepanel",
+      "Montering av nytt panel ved fasaderehabilitering",
+      "Innvendig panel til stue, hytte og andre rom"
+    ],
+    "why": "Ta gjerne kontakt for en uforpliktende prat om hva som passer ditt prosjekt."
+  },
+  {
+    "title": "Kjøkkenmontering",
+    "slug": "kjokkenmontering",
+    "intro": "Et nytt kjøkken skal sitte riktig fra dag én. Vi monterer kjøkken med nøyaktighet, enten det er et komplett nytt kjøkken eller oppgradering av deler.",
+    "bullets": [
+      "Montering av kjøkkeninnredning, skap og benkeplater",
+      "Tilpasning til vegger, gulv og eksisterende røropplegg",
+      "Koordinering med rørlegger og elektriker ved behov"
+    ],
+    "why": "Usikker på omfanget av jobben? Vi tar gjerne en uforpliktende prat."
+  }
+]

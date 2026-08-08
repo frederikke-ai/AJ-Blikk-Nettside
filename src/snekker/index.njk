@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: Snekker
+description: "Snekkertjenester i Bærum, Asker og Stor-Oslo. AJ Blikk AS leverer terrasse, rekkverk, panel, lettvegger og kjøkkenmontering."
+---
+{% import "partials/service-card.njk" as serviceCard %}
+<section class="border-b border-gray-200 bg-brand-light">
+  <div class="section section-py">
+    <h1 class="text-3xl font-bold text-brand md:text-4xl">Snekker</h1>
+    <p class="mt-3 max-w-2xl text-gray-600">Vi kombinerer blikkenslagerfaget med snekkerarbeid, og hjelper deg med alt fra terrasse og rekkverk til panel og kjøkkenmontering i Bærum, Asker og hele Stor-Oslo.</p>
+  </div>
+</section>
+
+<section class="section section-py">
+  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    {% for service in snekker %}
+    {{ serviceCard.card(service, "snekker") }}
+    {% endfor %}
+  </div>
+</section>
+
+{% include "partials/cta-banner.njk" %}

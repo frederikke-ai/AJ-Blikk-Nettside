@@ -18,4 +18,18 @@
   .form-input {
     @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-accent focus:ring-accent;
   }
+  .carousel-track {
+    @apply flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth pb-4;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .carousel-track::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel-item {
+    @apply w-64 shrink-0 snap-start sm:w-72;
+  }
+  .carousel-btn {
+    @apply flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-brand shadow-sm transition hover:border-accent hover:text-accent;
+  }
 }
