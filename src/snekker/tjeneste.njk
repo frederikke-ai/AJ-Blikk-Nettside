@@ -24,15 +24,15 @@ eleventyComputed:
 
     <p>{{ service.intro }}</p>
 
-    <h2 class="text-xl font-semibold text-brand">Hva innebærer {{ service.title | lower }}?</h2>
+    <h2 class="text-xl font-semibold text-brand">Hva utfører vi innen {{ service.title | lower }}?</h2>
     <ul class="list-inside list-disc space-y-1">
       {% for bullet in service.bullets %}
       <li>{{ bullet }}</li>
       {% endfor %}
     </ul>
-
-    <h2 class="text-xl font-semibold text-brand">Hvorfor velge AJ Blikk AS?</h2>
+    {% if service.why %}
     <p>{{ service.why }}</p>
+    {% endif %}
   </div>
 
   <aside class="h-fit rounded-lg border border-gray-200 bg-brand-light p-6">

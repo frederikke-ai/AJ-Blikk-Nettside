@@ -2,14 +2,14 @@
   {
     "title": "Taktekking",
     "slug": "taktekking",
-    "short": "Ny taktekking for flate og skrå tak, i Bærum, Asker og Oslo.",
-    "intro": "Trenger taket ditt ny tekking, eller er du usikker på tilstanden? AJ Blikk er en erfaren taktekker i Bærum, Asker og Oslo, og leverer taktekking (også kjent som takomlegging) for både flate og skrå tak. Vi ser på helheten: lufting, isolasjon og materialvalg, slik at taket holder i mange år fremover.",
+    "short": "Taktekking / Takomlegging for både skrå og flate tak. Vi hjelper deg med å velge optimal løsning.",
+    "intro": "Trenger taket ditt ny tekking, eller er du usikker på tilstanden? AJ Blikk er en erfaren taktekker, og leverer taktekking (også kjent som takomlegging) for både flate og skrå tak. Vi ser på helheten: lufting, isolasjon og materialvalg, slik at taket holder i mange år fremover.",
     "bullets": [
       "Befaring og vurdering av eksisterende tak og undertak",
       "Taktekking på både skråtak og flatt tak, med riktig fall og god fuktsikring",
-      "Beslag rundt gjennomføringer, pipe og kanter for et helhetlig, tett resultat"
+      "Beslag rundt gjennomføringer, pipa og kanter for et helhetlig, tett resultat"
     ],
-    "why": "Vi har god erfaring med taktekking på flatt tak, som stiller andre krav til fall og membran enn skrå tak. Er du i tvil om hva som er riktig for ditt tak, tar vi gjerne en uforpliktende prat.",
+    "why": "Vi har god erfaring med taktekking av både private boliger og store næringsbygg med flatt tak, som stiller helt andre krav til fall og membran enn skrå tak. Er du i tvil om hva som er riktig for ditt tak, tar vi gjerne en uforpliktende prat.",
     "ctaQuestion": "Er du i tvil om taket bør byttes?",
     "ctaText": "Usikker på om det holder med reparasjon, eller om taket bør legges helt om? Vi kommer på en uforpliktende befaring og gir deg en ærlig vurdering."
   },
@@ -28,7 +28,7 @@
   {
     "title": "Båndtekking",
     "slug": "bandtekking",
-    "short": "Solid båndtekking i stål, kobber, sink og flere metaller.",
+    "short": "Båndtekking er et solid og tradisjonsrikt alternativ for tak som skal vare lenge, og krever nøyaktig fagarbeid.",
     "intro": "Båndtekking er et solid og tradisjonsrikt alternativ for tak som skal vare lenge, og krever nøyaktig fagarbeid. Vi utfører båndtekking i stål, kobber, sink og flere andre metaller, tilpasset bygget og budsjettet ditt.",
     "bullets": [
       "Båndtekking i stål, kobber, sink eller aluminium etter ønske og budsjett",
@@ -41,7 +41,7 @@
     "title": "Taksikring",
     "slug": "taksikring",
     "short": "Takstiger, snøfangere og sikkerhetsutstyr for taket ditt.",
-    "intro": "Vi leverer taksikring i form av takstiger, snøfangere og annet sikkerhetsutstyr, slik at både de som ferdes på taket og de som beveger seg rundt huset er trygge. Taksikring er også ofte et krav fra forsikringsselskap og brannvesen.",
+    "intro": "Vi leverer taksikring i form av takstiger, snøfangere og annet sikkerhetsutstyr, slik at både de som ferdes på taket og de som beveger seg rundt huset er trygge. Taksikring er ofte et krav fra forsikringsselskap og brannvesen.",
     "bullets": [
       "Snøfangere som hindrer snø og is i å rase ned fra taket",
       "Takstiger og gangbroer for trygg adkomst ved feiing, kontroll og vedlikehold",
@@ -54,7 +54,7 @@
     "title": "Snøfanger",
     "slug": "snofanger",
     "short": "Nye snøfangere, og ettermontering på eksisterende tak.",
-    "intro": "Snøfangere hindrer snø og is i å rase ned fra taket, og er ofte et krav på bebygde eiendommer. Vi monterer nye snøfangere, og ettermonterer også snøfangere på eksisterende tak, noe mange lurer på om er mulig.",
+    "intro": "Snøfangere hindrer snø og is i å rase ned fra taket, og er ofte et krav på bebygde eiendommer. Vi monterer snøfangere på både nye og eksisterende tak.",
     "bullets": [
       "Ettermontering av snøfanger på eksisterende tak, uten at hele taket må legges om",
       "Montering på nybygg og ved taktekking som del av et større prosjekt",
@@ -89,10 +89,10 @@
   {
     "title": "Pipebeslag",
     "slug": "pipebeslag",
-    "short": "Tett pipebeslag som hindrer lekkasjer rundt pipen.",
-    "intro": "Et pipebeslag som ikke er tett, er en av de vanligste årsakene til lekkasjer rundt pipe. Vi monterer og reparerer pipebeslag i stål, kobber, sink og andre metaller, tilpasset pipe og taktype.",
+    "short": "Tett pipebeslag som hindrer lekkasjer rundt pipa.",
+    "intro": "Et pipebeslag som ikke er tett, er en av de vanligste årsakene til lekkasjer rundt pipa. Vi monterer og reparerer pipebeslag i stål, kobber, sink og andre metaller, tilpasset pipa og taktype.",
     "bullets": [
-      "Nytt pipebeslag ved taktekking eller renovering av pipe",
+      "Nytt pipebeslag ved taktekking eller renovering av pipa",
       "Utbedring av utette eller skadde pipebeslag på eldre tak",
       "Tilpasning til teglstein, skifer, stål og andre taktekker"
     ],
@@ -126,14 +126,25 @@
     "title": "Lekkasje",
     "slug": "lekkasje",
     "short": "Vi finner og utbedrer lekkasjer i hele huset, ikke bare taket.",
-    "intro": "Lekkasjer handler ikke bare om taket. Vann kan trenge inn rundt pipe, ved grunnmur og andre steder vann finner veien inn i huset. AJ Blikk har bred kompetanse på å lokalisere og utbedre lekkasjeproblematikk i hele huset, ikke bare på taket.",
+    "intro": "Lekkasjer handler ikke bare om taket. Vann kan trenge inn rundt pipa, ved grunnmur og andre steder vann finner veien inn i huset. AJ Blikk har bred kompetanse på å lokalisere og utbedre lekkasjeproblematikk i hele huset, ikke bare på taket.",
     "bullets": [
       "Feilsøking og kartlegging av fukt- og lekkasjekilder",
-      "Utbedring av lekkasjer ved pipe, grunnmur, fasade og takgjennomføringer",
+      "Utbedring av lekkasjer ved pipa, grunnmur, fasade og takgjennomføringer",
       "Forebyggende beslagsarbeid som hindrer nye lekkasjer"
     ],
-    "why": "Vi jobber med alt fra takrenner og pipebeslag til fasadebeslag og sokkelbeslag, og ser derfor ofte sammenhenger andre kan overse.",
     "ctaQuestion": "Lurer du på om du har en lekkasje eller en begynnende lekkasje?",
     "ctaText": "Fuktmerker, lukt eller mistanke om fukt er lett å skyve foran seg. Vi tar en grundig sjekk og gir deg svar på hva som faktisk skjer, før det blir en stor og kostbar skade."
+  },
+  {
+    "title": "Takrens",
+    "slug": "takrens",
+    "short": "Rens av tak og takrenner, anbefalt annenhvert år.",
+    "intro": "Vi anbefaler takrens og sjekk av takrenner annenhvert år, spesielt hvis det er mye trær i området. Løv, kvister og mose kan tette takrenner og nedløp, og over tid føre til fuktskader.",
+    "bullets": [
+      "Rens av takrenner og nedløp for løv, mose og rusk",
+      "Kontroll av taket for skader, mose og slitasje",
+      "Anbefales annenhvert år, oftere ved mye trær i området"
+    ],
+    "why": "Regelmessig takrens forlenger levetiden på taket og forhindrer unødvendige lekkasjer."
   }
 ]

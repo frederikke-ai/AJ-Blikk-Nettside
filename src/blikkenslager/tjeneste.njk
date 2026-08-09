@@ -32,12 +32,15 @@ eleventyComputed:
     </div>
     {% endif %}
 
-    <h2 class="text-xl font-semibold text-brand">Hva innebærer {{ service.title | lower }}?</h2>
+    <h2 class="text-xl font-semibold text-brand">Hva utfører vi innen {{ service.title | lower }}?</h2>
     <ul class="list-inside list-disc space-y-1">
       {% for bullet in service.bullets %}
       <li>{{ bullet }}</li>
       {% endfor %}
     </ul>
+    {% if service.why %}
+    <p>{{ service.why }}</p>
+    {% endif %}
 
     {% if service.children %}
     <h2 class="text-xl font-semibold text-brand">Les mer</h2>
@@ -51,9 +54,6 @@ eleventyComputed:
       {% endfor %}
     </ul>
     {% endif %}
-
-    <h2 class="text-xl font-semibold text-brand">Hvorfor velge AJ Blikk AS?</h2>
-    <p>{{ service.why }}</p>
 
     {% if service.note %}
     <p class="text-sm text-gray-500">{{ service.note }}</p>
