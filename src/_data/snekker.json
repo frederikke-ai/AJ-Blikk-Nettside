@@ -2,6 +2,7 @@
   {
     "title": "Terrasse",
     "slug": "terrasse",
+    "image": "/img/terrasse.jpg",
     "short": "Bygging og reparasjon av terrasser i alle typer materiale.",
     "intro": "En ny eller oppgradert terrasse gir mer bruksareal og hverdagsglede. Vi bygger og reparerer terrasser tilpasset hus og hage.",
     "bullets": [
@@ -14,6 +15,7 @@
   {
     "title": "Rekkverk",
     "slug": "rekkverk",
+    "image": "/img/rekkverk.jpg",
     "short": "Sikkert og pent rekkverk til terrasse, trapp og balkong.",
     "intro": "Rekkverk skal både være sikkert og se bra ut, enten det er til terrasse, trapp eller balkong. Vi monterer rekkverk tilpasset dine ønsker og gjeldende krav.",
     "bullets": [
@@ -26,6 +28,7 @@
   {
     "title": "Lettvegger og gipsplater",
     "slug": "lettvegger-gipsplater",
+    "image": "/img/lettvegger-gipsplater.jpg",
     "short": "Lettvegger og gipsplater til oppussing og romdeling.",
     "intro": "Skal du dele opp et rom, isolere bedre eller pusse opp innvendig? Vi setter opp lettvegger og monterer gipsplater med solid fagarbeid.",
     "bullets": [

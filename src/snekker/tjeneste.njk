@@ -18,9 +18,15 @@ eleventyComputed:
 
 <section class="section section-py grid gap-12 lg:grid-cols-3">
   <div class="space-y-6 leading-relaxed text-gray-700 lg:col-span-2">
+    {% if service.detailImage %}
+    <div class="flex max-h-[520px] items-center justify-center overflow-hidden rounded-lg bg-brand-light">
+      <img src="{{ service.detailImage }}" alt="{{ service.title }}" class="max-h-[520px] w-auto max-w-full object-contain">
+    </div>
+    {% else %}
     <div class="flex aspect-video items-center justify-center rounded-lg border border-gray-200 bg-brand-light text-sm text-gray-400">
       TODO: Bilde/eksempel som viser {{ service.title | lower }}
     </div>
+    {% endif %}
 
     <p>{{ service.intro }}</p>
 

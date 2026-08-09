@@ -2,6 +2,7 @@
   {
     "title": "Taktekking",
     "slug": "taktekking",
+    "image": "/img/taktekking.jpg",
     "short": "Taktekking / Takomlegging for både skrå og flate tak. Vi hjelper deg med å velge optimal løsning.",
     "intro": "Trenger taket ditt ny tekking, eller er du usikker på tilstanden? AJ Blikk er en erfaren taktekker, og leverer taktekking (også kjent som takomlegging) for både flate og skrå tak. Vi ser på helheten: lufting, isolasjon og materialvalg, slik at taket holder i mange år fremover.",
     "bullets": [
@@ -28,6 +29,7 @@
   {
     "title": "Båndtekking",
     "slug": "bandtekking",
+    "image": "/img/bandtekking.jpg",
     "short": "Båndtekking er et solid og tradisjonsrikt alternativ for tak som skal vare lenge, og krever nøyaktig fagarbeid.",
     "intro": "Båndtekking er et solid og tradisjonsrikt alternativ for tak som skal vare lenge, og krever nøyaktig fagarbeid. Vi utfører båndtekking i stål, kobber, sink og flere andre metaller, tilpasset bygget og budsjettet ditt.",
     "bullets": [
@@ -77,6 +79,7 @@
   {
     "title": "Takrenner og nedløp",
     "slug": "takrenner-nedlop",
+    "image": "/img/takrenner-nedlop.jpg",
     "short": "Montering og bytte av takrenner og nedløp.",
     "intro": "Takrenner og nedløp hører sammen: fungerer det ene dårlig, går det ofte ut over det andre. Vi monterer nye takrenner med nedløp, og bytter ut gamle løsninger som ikke lenger holder tett.",
     "bullets": [
@@ -89,6 +92,7 @@
   {
     "title": "Pipebeslag",
     "slug": "pipebeslag",
+    "image": "/img/pipebeslag.jpg",
     "short": "Tett pipebeslag som hindrer lekkasjer rundt pipa.",
     "intro": "Et pipebeslag som ikke er tett, er en av de vanligste årsakene til lekkasjer rundt pipa. Vi monterer og reparerer pipebeslag i stål, kobber, sink og andre metaller, tilpasset pipa og taktype.",
     "bullets": [
@@ -101,6 +105,7 @@
   {
     "title": "Takhatt, luftehatt og soilhatt",
     "slug": "takhatt",
+    "image": "/img/takhatt.jpg",
     "short": "Riktig ventilasjon med takhatt, luftehatt og soilhatt.",
     "intro": "God lufting og ventilasjon av taket forlenger levetiden og forebygger fukt. Vi monterer takhatter, luftehatter og soilhatter tilpasset ditt tak og behov.",
     "bullets": [
@@ -123,8 +128,23 @@
     "why": "Usikker på hva som passer? Ta gjerne kontakt for en uforpliktende prat."
   },
   {
+    "title": "Beslag",
+    "slug": "beslag",
+    "image": "/img/beslag-collage.webp",
+    "detailImage": "/img/beslag-collage.webp",
+    "short": "Vi utfører jobber innen alt av beslagarbeid, stort som smått.",
+    "intro": "Beslag brukes til å tette og beskytte overganger og kanter i hele bygget, ikke bare på taket. Vi utfører jobber innen alt av beslagarbeid, fra vindusblekk og sokkelbeslag til gesimser og andre løsninger tilpasset bygget ditt.",
+    "bullets": [
+      "Vindusblekk, sokkelbeslag og gesimsbeslag i stål, kobber, sink eller aluminium",
+      "Beslag tilpasset overganger, kanter og gjennomføringer på hele bygget",
+      "Nye beslag ved oppussing og nybygg, samt utskifting av gamle beslag"
+    ],
+    "why": "Har du en beslagsjobb som ikke passer inn under noen av de andre kategoriene? Ta gjerne kontakt for en uforpliktende prat."
+  },
+  {
     "title": "Lekkasje",
     "slug": "lekkasje",
+    "image": "/img/lekkasje.jpg",
     "short": "Vi finner og utbedrer lekkasjer i hele huset, ikke bare taket.",
     "intro": "Lekkasjer handler ikke bare om taket. Vann kan trenge inn rundt pipa, ved grunnmur og andre steder vann finner veien inn i huset. AJ Blikk har bred kompetanse på å lokalisere og utbedre lekkasjeproblematikk i hele huset, ikke bare på taket.",
     "bullets": [
